@@ -1,0 +1,69 @@
+# ccd service
+service ccd /vendor/bin/ccd
+	class main
+	user system
+	group system
+	capabilities WAKE_ALARM
+	file /dev/kmsg w
+
+# setup permissions for CCD control
+on boot
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_fcc
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_fcc
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_icl
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_icl
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_batchg_en
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_batchg_en
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_input_suspend
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_input_suspend
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_vfloat
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_vfloat
+	chown system system /sys/class/power_supply/bms/battery_cycle
+	chmod 644 /sys/class/power_supply/bms/battery_cycle
+	chown system system /sys/class/power_supply/battery/voltage_max
+	chmod 644 /sys/class/power_supply/battery/voltage_max
+	chown system system /sys/class/power_supply/battery/constant_charge_current_max
+	chmod 644 /sys/class/power_supply/battery/constant_charge_current_max
+	chown system system /sys/class/power_supply/bms/cycle_count_id
+	chmod 644 /sys/class/power_supply/bms/cycle_count_id
+	chown system system /proc/lge_power/battery/health
+	chmod 644 /proc/lge_power/battery/health
+	chown system system /sys/devices/platform/lge-unified-nodes/time_to_full_now
+	chmod 644 /sys/devices/platform/lge-unified-nodes/time_to_full_now
+	chown system system /proc/lge_power/battery/time_to_full_now
+	chmod 644 /proc/lge_power/battery/time_to_full_now
+	chown system system /sys/class/power_supply/battery/time_to_full_now
+	chmod 644 /sys/class/power_supply/battery/time_to_full_now
+	chown system system /sys/devices/platform/lge-unified-nodes/bsm_timetofull
+	chmod 644 /sys/devices/platform/lge-unified-nodes/bsm_timetofull
+	chown system system /mnt/vendor/power
+
+on chargerlogo
+	start ccd
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_fcc
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_fcc
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_icl
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_icl
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_batchg_en
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_batchg_en
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_input_suspend
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_input_suspend
+	chown system system /sys/devices/platform/lge-unified-nodes/ccd_vfloat
+	chmod 644 /sys/devices/platform/lge-unified-nodes/ccd_vfloat
+	chown system system /sys/class/power_supply/bms/battery_cycle
+	chmod 644 /sys/class/power_supply/bms/battery_cycle
+	chown system system /sys/class/power_supply/battery/voltage_max
+	chmod 644 /sys/class/power_supply/battery/voltage_max
+	chown system system /sys/class/power_supply/battery/constant_charge_current_max
+	chmod 644 /sys/class/power_supply/battery/constant_charge_current_max
+	chown system system /sys/class/power_supply/bms/cycle_count_id
+	chmod 644 /sys/class/power_supply/bms/cycle_count_id
+	chown system system /proc/lge_power/battery/health
+	chmod 644 /proc/lge_power/battery/health
+	chown system system /proc/lge_power/battery/time_to_full_now
+	chmod 644 /proc/lge_power/battery/time_to_full_now
+	chown system system /sys/class/power_supply/battery/time_to_full_now
+	chmod 644 /sys/class/power_supply/battery/time_to_full_now
+	chown system system /sys/devices/platform/lge-unified-nodes/time_to_full_now
+	chmod 644 /sys/devices/platform/lge-unified-nodes/time_to_full_now
+	chown system system /mnt/vendor/power

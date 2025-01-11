@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ccd-config model="caymanlm">
+    <llk>
+        <integer name="soc_min">45</integer>
+        <integer name="soc_max">50</integer>
+    </llk>
+    <lcs>
+        <integer name="warm_ibat">450</integer>
+        <integer name="cool_ibat">450</integer>
+    </lcs>
+    <ttf>
+        <fastchg_support name="fastchg_support" index="0">
+            <integer name="battery_capacity">4000</integer>
+            <integer name="dcp_current">1800</integer>
+            <integer name="usbpd_current">-1</integer>
+            <integer name="hvdcp_current">-1</integer>
+            <integer name="hvdcp_current">-1</integer>
+            <integer name="hvdcp3_current">-1</integer>
+            <integer name="wlc_current">-1</integer>
+            <bool name="usbpd_supported">false</bool>
+            <bool name="hvdcp_supported">false</bool>
+            <bool name="hvdcp3_supported">false</bool>
+            <bool name="wlc_supported">false</bool>
+            <bool name="parallel_supported">false</bool>
+            <bool name="typec_supported">true</bool>
+            <integer name="ttf_result_comp">0</integer>
+            <integer name="sdp_comp">0</integer>
+            <integer name="dcp_comp">0</integer>
+            <integer name="cdp_comp">0</integer>
+			<integer name="hvdcp_comp">0</integer>
+			<integer name="hvdcp3_comp">0</integer>
+			<integer name="usbpd_comp">0</integer>
+            <integer name="total_min_comp">0</integer>
+            <profile name="profile" index="0">
+                <string name="battery_type">LGE_BLT50_LGC_4000mAh</string>
+                <cc_data name="cc_data">
+                    <integer name="cur" index="0">3700</integer>
+                    <integer name="soc" index="0">30</integer>
+                    <integer name="cur" index="1">3150</integer>
+                    <integer name="soc" index="1">660</integer>
+                    <integer name="cur" index="2">2600</integer>
+                    <integer name="soc" index="2">710</integer>
+                    <integer name="cur" index="3">2100</integer>
+                    <integer name="soc" index="3">760</integer>
+                    <integer name="cur" index="4">1850</integer>
+                    <integer name="soc" index="4">810</integer>
+                    <integer name="cur" index="5">1550</integer>
+                    <integer name="soc" index="5">890</integer>
+                    <integer name="cur" index="6">1250</integer>
+                    <integer name="soc" index="6">920</integer>
+                    <integer name="cur" index="7">1050</integer>
+                    <integer name="soc" index="7">940</integer>
+                </cc_data>
+                <cv_data name="cv_data">
+                    <integer name="cur" index="0">936</integer>
+                    <integer name="soc" index="0">970</integer>
+                    <integer name="time" index="0">544</integer>
+                    <integer name="cur" index="1">836</integer>
+                    <integer name="soc" index="1">980</integer>
+                    <integer name="time" index="1">416</integer>
+                    <integer name="cur" index="2">722</integer>
+                    <integer name="soc" index="2">990</integer>
+                    <integer name="time" index="2">255</integer>
+                    <integer name="cur" index="3">580</integer>
+                    <integer name="soc" index="3">1000</integer>
+                    <integer name="time" index="3">0</integer>
+                </cv_data>
+            </profile>
+        </fastchg_support>
+        <fastchg_support name="fastchg_support" index="1">
+            <integer name="battery_capacity">4000</integer>
+            <integer name="dcp_current">1800</integer>
+            <integer name="usbpd_current">3700</integer>
+            <integer name="hvdcp_current">2900</integer>
+            <integer name="hvdcp3_current">3200</integer>
+            <integer name="wlc_current">1500</integer>
+            <integer name="bcc_current">2000</integer>
+            <bool name="usbpd_supported">true</bool>
+            <bool name="hvdcp_supported">true</bool>
+            <bool name="hvdcp3_supported">true</bool>
+            <bool name="wlc_supported">true</bool>
+            <bool name="parallel_supported">false</bool>
+            <bool name="typec_supported">true</bool>
+            <integer name="ttf_result_comp">8</integer>
+            <integer name="sdp_comp">-6</integer>
+            <integer name="dcp_comp">0</integer>
+            <integer name="cdp_comp">5</integer>
+            <integer name="hvdcp_comp">0</integer>
+            <integer name="hvdcp3_comp">0</integer>
+            <integer name="usbpd_comp">0</integer>
+            <integer name="total_min_comp">0</integer>
+            <profile name="profile" index="0">
+                <string name="battery_type">LGE_BLT50_LGC_4000mAh</string>
+                <cc_data name="cc_data">
+                    <integer name="cur" index="0">3700</integer>
+                    <integer name="soc" index="0">30</integer>
+                    <integer name="cur" index="1">3150</integer>
+                    <integer name="soc" index="1">660</integer>
+                    <integer name="cur" index="2">2600</integer>
+                    <integer name="soc" index="2">710</integer>
+                    <integer name="cur" index="3">2100</integer>
+                    <integer name="soc" index="3">760</integer>
+                    <integer name="cur" index="4">1850</integer>
+                    <integer name="soc" index="4">810</integer>
+                    <integer name="cur" index="5">1550</integer>
+                    <integer name="soc" index="5">890</integer>
+                    <integer name="cur" index="6">1250</integer>
+                    <integer name="soc" index="6">920</integer>
+                    <integer name="cur" index="7">1050</integer>
+                    <integer name="soc" index="7">940</integer>
+                </cc_data>
+                <cv_data name="cv_data">
+                    <integer name="cur" index="0">936</integer>
+                    <integer name="soc" index="0">970</integer>
+                    <integer name="time" index="0">544</integer>
+                    <integer name="cur" index="1">836</integer>
+                    <integer name="soc" index="1">980</integer>
+                    <integer name="time" index="1">416</integer>
+                    <integer name="cur" index="2">722</integer>
+                    <integer name="soc" index="2">990</integer>
+                    <integer name="time" index="2">255</integer>
+                    <integer name="cur" index="3">580</integer>
+                    <integer name="soc" index="3">1000</integer>
+                    <integer name="time" index="3">0</integer>
+                </cv_data>
+            </profile>
+        </fastchg_support>
+    </ttf>
+    <cbc>
+        <integer name="cbc_config_set_num">4</integer>
+        <integer name="learned_cc_filter_factor">9</integer>
+        <integer name="cycle_weight_supported">1</integer>
+        <integer name="learned_cc_filter_supported">0</integer>
+        <integer name="batt_life_cycle_set_0">0</integer>
+        <integer name="batt_life_cycle_set_1">200</integer>
+        <integer name="batt_life_cycle_set_2">300</integer>
+        <integer name="batt_life_cycle_set_3">400</integer>
+        <integer name="batt_life_cycle_vfloat_0">4400</integer>
+        <integer name="batt_life_cycle_vfloat_1">4380</integer>
+        <integer name="batt_life_cycle_vfloat_2">4360</integer>
+        <integer name="batt_life_cycle_vfloat_3">4350</integer>
+        <integer name="batt_life_cycle_fcc_0">2600</integer>
+        <integer name="batt_life_cycle_fcc_1">2500</integer>
+        <integer name="batt_life_cycle_fcc_2">2400</integer>
+        <integer name="batt_life_cycle_fcc_3">2300</integer>
+        <integer name="cw_1st_highest_temp_constant">909</integer>
+        <integer name="cw_1st_high_temp_constant">417</integer>
+        <integer name="cw_1st_room_temp_constant">208</integer>
+        <integer name="cw_2nd_highest_temp_constant">651</integer>
+        <integer name="cw_2nd_high_temp_constant">261</integer>
+        <integer name="cw_2nd_room_temp_constant">139</integer>
+        <integer name="cw_3rd_highest_temp_constant">42</integer>
+        <integer name="cw_3rd_high_temp_constant">26</integer>
+        <integer name="cw_3rd_room_temp_constant">26</integer>
+        <integer name="cw_slope_1st_high_temp">19355</integer>
+        <integer name="cw_slope_2nd_high_temp">32143</integer>
+        <integer name="cw_slope_3rd_high_temp">72000</integer>
+        <integer name="cw_slope_1st_room_temp">16413</integer>
+        <integer name="cw_slope_2nd_room_temp">42520</integer>
+        <integer name="cw_slope_3rd_room_temp">88252</integer>
+        <integer name="cw_offset_1st_high_temp">27401</integer>
+        <integer name="cw_offset_2nd_high_temp">31607</integer>
+        <integer name="cw_offset_3rd_high_temp">30000</integer>
+        <integer name="cw_offset_1st_room_temp">29316</integer>
+        <integer name="cw_offset_2nd_room_temp">28898</integer>
+        <integer name="cw_offset_3rd_room_temp">27705</integer>
+        <integer name="cw_highest_vbat">4400</integer>
+        <integer name="cw_high_vbat">4350</integer>
+        <integer name="cw_mid_high_vbat">4150</integer>
+        <integer name="cw_high_threshold_batt_voltage">4050</integer>
+        <integer name="cw_highest_temp_degree">450</integer>
+        <integer name="cw_high_temp_degree">400</integer>
+        <integer name="cw_room_temp_degree">300</integer>
+        <integer name="cbc_enabled">0</integer>
+    </cbc>
+</ccd-config>
+
